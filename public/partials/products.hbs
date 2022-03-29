@@ -1,0 +1,26 @@
+<div class="container shadow p-3 mb-5 bg-body rounded">
+    <h2> Listado de Productos: </h2>
+    <table class="table w-70 ">
+    <thead class="text-head">
+        <tr>
+        <th scope="col" class="text-center">Nombre</th>
+        <th scope="col" class="text-center">Precio</th>
+        <th scope="col" class="text-center">Imagen</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            {{#each productos}}
+                <tr  class="text-body">
+                    <td class="align-middle product-list text-center">{{this.title}}</td>
+                    <td class="align-middle product-list text-center" >$ {{this.price}}</td>
+                    <td>
+                        <img alt="ProductImg" class="img rounded mx-auto d-block" src={{this.thumbnail}}>
+                    </td>
+                </tr>
+            {{/each}}
+    </tbody>
+
+  </table>
+    <a href="/" class="btn btn-primary m-3" role="button"> Home</a>
+</div>

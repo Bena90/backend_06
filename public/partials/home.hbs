@@ -1,0 +1,23 @@
+<div class="container shadow p-3 mb-5 bg-body rounded">
+    <h2> Carga de Productos: </h2>
+    <form action="/productos" method="POST" class="px-3">
+
+        <div class="input-group m-3">
+            <span class="input-group-text">Nombre: </span>
+            <input type="text" class="form-control" placeholder="Nombre" name="title">
+        </div>
+
+        <div class="input-group m-3">
+            <span class="input-group-text">Precio: </span>
+            <input type="number" class="form-control" placeholder="Precio" name="price">
+        </div>
+
+        <div class="input-group m-3">
+            <span class="input-group-text" >URL Imagen </span>
+            <input type="text" class="form-control" placeholder="https://picsum.photos/300/300?random=1" value="https://picsum.photos/300/300?random=1" name="thumbnail" id="url">
+        </div>
+        
+        <button class="btn btn-success m-3" type="submit"> Guardar </button>
+        <a href="/productos" class="btn btn-primary m-3" role="button"> Productos </a>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<hr>
+<div class="container shadow p-3 mb-3 bg-body rounded-3">
+    <h2> Chat: </h2>
+    <p id="online"></p>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+            <label for="nombre">Nombre</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="mensaje" style="height: 100px required"></textarea>
+            <label for="mensaje">Mensaje</label>
+        </div>
+
+        <button onclick="send()" class="btn btn-primary mb-3"> Enviar </button>
+    
+    <h4> Mensajes: </h4>
+    <div id='msgs' class="py-3"></div>
+
+</div>
